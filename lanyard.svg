@@ -1,0 +1,107 @@
+<svg width="380" height="620" viewBox="0 0 380 620" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-label="Mayank Jha ID lanyard">
+<title>Mayank Jha - ID Badge</title>
+<defs>
+  <linearGradient id="strapGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#ff6ec7"/>
+    <stop offset="100%" stop-color="#c084fc"/>
+  </linearGradient>
+  <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#1b1030"/>
+    <stop offset="100%" stop-color="#241540"/>
+  </linearGradient>
+  <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset="45%" stop-color="#ffffff" stop-opacity="0.35"/>
+    <stop offset="55%" stop-color="#ffffff" stop-opacity="0.35"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="ringGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="60%" stop-color="#ff6ec7" stop-opacity="0.9"/>
+    <stop offset="100%" stop-color="#ff6ec7" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="cardShadow2" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000" flood-opacity="0.5"/>
+  </filter>
+  <clipPath id="avatarClip"><circle cx="0" cy="0" r="55"/></clipPath>
+  <style>
+    .mono { font-family: 'SFMono-Regular', Consolas, Menlo, monospace; }
+    .sans { font-family: 'Segoe UI', Roboto, Arial, sans-serif; }
+  </style>
+</defs>
+
+<!-- fixed strap anchor at top of viewport -->
+<line x1="190" y1="0" x2="190" y2="70" stroke="url(#strapGrad)" stroke-width="26"/>
+<circle cx="190" cy="0" r="14" fill="#8b2f6b"/>
+
+<!-- swinging assembly: drop then damped pendulum then gentle infinite sway -->
+<g id="pivot" transform="translate(190,70)">
+  <g id="swingGroup">
+    <animateTransform id="dropAnim" attributeName="transform" type="translate"
+      values="0,-260;0,-260;0,10;0,-14;0,4;0,0" keyTimes="0;0.05;0.55;0.72;0.88;1"
+      dur="1.4s" begin="0s" fill="freeze" calcMode="spline"
+      keySplines="0 0 1 1;0.3 0 0.2 1;0.3 0 0.2 1;0.3 0 0.2 1;0.3 0 0.2 1"/>
+    <animateTransform id="swing1" attributeName="transform" type="rotate" additive="sum"
+      values="0;16;-12;9;-6;4;-2;1;0" keyTimes="0;0.12;0.28;0.42;0.56;0.7;0.84;0.94;1"
+      dur="2.6s" begin="dropAnim.end" fill="freeze" calcMode="spline"
+      keySplines="0.3 0 0.7 1;0.3 0 0.7 1;0.3 0 0.7 1;0.3 0 0.7 1;0.3 0 0.7 1;0.3 0 0.7 1;0.3 0 0.7 1;0.3 0 0.7 1"/>
+    <animateTransform attributeName="transform" type="rotate" additive="sum"
+      values="0;2.5;-2.5;0" dur="4.2s" begin="swing1.end" repeatCount="indefinite" calcMode="spline"
+      keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
+
+    <!-- clasp + strap remainder attached to card -->
+    <rect x="-8" y="0" width="16" height="26" rx="4" fill="#c9c9d6" stroke="#8a8a99"/>
+    <circle cx="0" cy="30" r="9" fill="none" stroke="#c9c9d6" stroke-width="4"/>
+    <rect x="-5" y="34" width="10" height="14" fill="#c9c9d6"/>
+
+    <!-- card body -->
+    <g transform="translate(0,48)">
+      <rect x="-150" y="0" width="300" height="420" rx="20" fill="url(#cardGrad)" stroke="#7c3aed" stroke-opacity="0.5" stroke-width="1.5" filter="url(#cardShadow2)"/>
+      <rect x="-150" y="0" width="300" height="420" rx="20" fill="none" stroke="url(#strapGrad)" stroke-width="1.5" opacity="0.6"/>
+
+      <!-- header strip -->
+      <text x="0" y="34" text-anchor="middle" class="mono" font-size="11" fill="#c9b8ff" letter-spacing="3">DEVELOPER ID</text>
+
+      <!-- avatar glow ring -->
+      <circle cx="0" cy="110" r="66" fill="url(#ringGlow)" filter="url(#soft)"/>
+      <circle cx="0" cy="110" r="58" fill="none" stroke="url(#strapGrad)" stroke-width="3"/>
+      <g clip-path="url(#avatarClip)" transform="translate(0,110)">
+        <rect x="-55" y="-55" width="110" height="110" fill="#2a1a44"/>
+        <image x="-55" y="-58" width="110" height="120" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,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"/>
+      </g>
+
+      <text x="0" y="204" text-anchor="middle" class="sans" font-size="22" font-weight="700" fill="#ffffff">Mayank Jha</text>
+      <text x="0" y="228" text-anchor="middle" class="sans" font-size="13" fill="#ff9fe0">Software Engineer &#183; Full Stack</text>
+      <text x="0" y="252" text-anchor="middle" class="mono" font-size="12" fill="#c9b8ff">@MayankBuilds21</text>
+
+      <line x1="-120" y1="270" x2="120" y2="270" stroke="#3a2657"/>
+
+      <!-- barcode -->
+      <g transform="translate(-110,290)" fill="#e8dcff">
+        <rect x="0" y="0" width="2" height="40"/><rect x="5" y="0" width="4" height="40"/><rect x="12" y="0" width="1" height="40"/>
+        <rect x="16" y="0" width="3" height="40"/><rect x="22" y="0" width="2" height="40"/><rect x="27" y="0" width="5" height="40"/>
+        <rect x="35" y="0" width="1" height="40"/><rect x="39" y="0" width="3" height="40"/><rect x="45" y="0" width="2" height="40"/>
+        <rect x="50" y="0" width="4" height="40"/><rect x="57" y="0" width="1" height="40"/><rect x="61" y="0" width="3" height="40"/>
+        <rect x="67" y="0" width="2" height="40"/><rect x="72" y="0" width="5" height="40"/><rect x="80" y="0" width="2" height="40"/>
+        <rect x="86" y="0" width="1" height="40"/><rect x="90" y="0" width="4" height="40"/><rect x="97" y="0" width="2" height="40"/>
+        <rect x="103" y="0" width="3" height="40"/><rect x="110" y="0" width="2" height="40"/><rect x="115" y="0" width="4" height="40"/>
+        <rect x="122" y="0" width="1" height="40"/><rect x="126" y="0" width="3" height="40"/><rect x="132" y="0" width="2" height="40"/>
+        <rect x="137" y="0" width="4" height="40"/><rect x="144" y="0" width="1" height="40"/><rect x="148" y="0" width="3" height="40"/>
+        <rect x="154" y="0" width="2" height="40"/><rect x="159" y="0" width="4" height="40"/><rect x="166" y="0" width="2" height="40"/>
+        <rect x="172" y="0" width="3" height="40"/><rect x="178" y="0" width="2" height="40"/><rect x="184" y="0" width="4" height="40"/>
+        <rect x="191" y="0" width="1" height="40"/><rect x="195" y="0" width="3" height="40"/><rect x="201" y="0" width="2" height="40"/>
+        <rect x="207" y="0" width="4" height="40"/><rect x="214" y="0" width="2" height="40"/><rect x="220" y="0" width="1" height="40"/>
+      </g>
+      <text x="0" y="356" text-anchor="middle" class="mono" font-size="9" fill="#8a76b8" letter-spacing="3">MB21-DEV-2026</text>
+
+      <!-- holographic shine sweep -->
+      <g clip-path="url(#cardClip)">
+        <rect x="-320" y="-20" width="140" height="480" fill="url(#shine)" transform="rotate(20)">
+          <animate attributeName="x" from="-320" to="380" dur="3.5s" begin="1.6s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <clipPath id="cardClip"><rect x="-150" y="0" width="300" height="420" rx="20"/></clipPath>
+    </g>
+  </g>
+</g>
+</svg>
