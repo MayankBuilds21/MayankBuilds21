@@ -57,9 +57,9 @@ I'm **Mayank Jha**, a Software Engineer and Full Stack Developer who enjoys turn
 
 | Project | Description | Stack |
 |---|---|---|
-| **[Project One](https://github.com/MayankBuilds21/project-one)** | Short description of what it does and the problem it solves. | React · Node.js · MongoDB |
-| **[Project Two](https://github.com/MayankBuilds21/project-two)** | Short description of what it does and the problem it solves. | Next.js · TypeScript · PostgreSQL |
-| **[Project Three](https://github.com/MayankBuilds21/project-three)** | Short description of what it does and the problem it solves. | Express · Prisma · Docker |
+| **[NeuroBoard](https://github.com/MayankBuilds21/NeuroBoard.git)** | Real-time analytics platform powered by TensorFlow.js with predictive analysis, live charts and automated reporting. | React · Node.js · MongoDB |
+| **[ShopNova X](https://github.com/MayankBuilds21/ShopNova.git)** | Complete online marketplace with inventory management, real-time stock updates and Stripe payment integration. | Next.js · TypeScript · PostgreSQL |
+| **[TruthNet Ai](https://github.com/MayankBuilds21/truthnet-ai.git)** | TruthNet AI helps verify the authenticity of text, images, and videos using advanced AI, providing fast and reliable fact-checking against misinformation. | Express · Prisma · Docker |
 
 <sub>Replace these rows with your real repositories.</sub>
 
