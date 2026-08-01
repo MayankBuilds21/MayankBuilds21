@@ -101,9 +101,9 @@ I'm **Mayank Jha**, a Software Engineer and Full Stack Developer who enjoys turn
 <div align="center">
 
 [![Email](https://img.shields.io/badge/Email-mayankbuilds21%40gmail.com-ff6ec7?style=for-the-badge&logo=gmail&logoColor=white&labelColor=1b0f2e)](mailto:mayankbuilds21@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-MayankBuilds21-c084fc?style=for-the-badge&logo=github&logoColor=white&labelColor=1b0f2e)](https://github.com/MayankBuilds21)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-7c3aed?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1b0f2e)](https://linkedin.com/in/your-linkedin-handle)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-ff6ec7?style=for-the-badge&logo=x&logoColor=white&labelColor=1b0f2e)](https://twitter.com/your-handle)
+[![GitHub](https://img.shields.io/badge/GitHub-MayankBuilds21-c084fc?style=for-the-badge&logo=github&logoColor=white&labelColor=1b0f2e)](https://github.com/Mayveno)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-7c3aed?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=1b0f2e)](https://www.linkedin.com/in/mayank-jha-5232bb27a/)
+[![X](https://img.shields.io/badge/Twitter-Follow-ff6ec7?style=for-the-badge&logo=x&logoColor=white&labelColor=1b0f2e)](https://x.com/MayankJ80497200)
 
 </div>
 
