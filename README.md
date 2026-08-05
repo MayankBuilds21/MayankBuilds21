@@ -74,14 +74,6 @@ I'm **Mayank Jha**, a Software Engineer and Full Stack Developer who enjoys turn
 
 <br/>
 
-## 🏆 Trophies
-
-<div align="center">
-<img src="./trophies.svg?v=1" alt="GitHub trophies" width="100%">
-</div>
-
-<br/>
-
 ## 📈 Contribution Activity
 
 <div align="center">
